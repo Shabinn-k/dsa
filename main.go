@@ -33,4 +33,21 @@ func main() {
 	arr3:=[]int{1,2,3,5,6,8,4,10}
 	SL:=Second(arr3)
 	fmt.Println(SL)
+
+	Student()
+
+	arr4:=[]string{"go", "java", "go", "python", "go"}
+	Frequency(arr4)
+
+	Characters("golang")
+
+	arr5:=[]int{1,2,2,3,4,3,5,4,5,6,7,8,9,7}
+	Duplicate(arr5)
+
+	Repeat("programming")
+
+	arr6:=[]int{2,3,4,5}
+	target:=9
+	TwoSum(target,arr6)
+
 }
