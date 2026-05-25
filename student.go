@@ -17,10 +17,10 @@ func Student() {
 	fmt.Println(std["modi"])
 
 	// update marks
-	std["john"]=85
+	std["john"] = 85
 	fmt.Println(std["john"])
 
 	// delete a student
-	delete(std,"modi")
+	delete(std, "modi")
 	fmt.Println(std)
 }

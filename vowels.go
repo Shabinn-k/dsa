@@ -14,6 +14,6 @@ func Vowel(str string) {
 			countC++
 		}
 	}
-	fmt.Println("Vowels :",countV)
-	fmt.Println("Consonants :",countC)
+	fmt.Println("Vowels :", countV)
+	fmt.Println("Consonants :", countC)
 }
