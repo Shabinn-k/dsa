@@ -7,9 +7,13 @@ func main() {
 	fmt.Println(RS(str1))
 
 	//bubble sort
-	arr1:=[]int{5,1,4,2,8}
+	arr1:=[]int{7 ,4 ,1 ,9 ,3}
 	BS:=Bubble(arr1)
 	fmt.Println(BS)
+
+	arr2:=[]int{2 ,8 ,1 ,5 ,4}
+	BSD:=BubbleDesc(arr2)
+	fmt.Print(BSD)
 
 	//Palindrome
 	str2:="malayalam"
@@ -26,7 +30,7 @@ func main() {
 	fmt.Println(VA)
 
 	//second largest from array
-	arr2:=[]int{1,2,3,5,6,8,4,10}
-	SL:=Second(arr2)
+	arr3:=[]int{1,2,3,5,6,8,4,10}
+	SL:=Second(arr3)
 	fmt.Println(SL)
 }
