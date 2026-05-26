@@ -66,4 +66,7 @@ func main() {
 	arr8:=[]int{64 ,25 ,12 ,22 ,11}
 	SS:=Selection(arr8)
 	fmt.Println(SS)
+
+	//Binary  tree
+	Binary()
 }
