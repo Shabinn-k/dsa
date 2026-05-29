@@ -16,6 +16,5 @@ func Binary() {
 	fmt.Println(root.data)
 	fmt.Println(root.left.data)
 	fmt.Println(root.right.data)
-
-	
+	fmt.Println("hyy")
 }
