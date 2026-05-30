@@ -9,7 +9,6 @@ func Bubble(arr []int) []int {
 			}
 		}
 	}
-
 	return arr
 }
 
