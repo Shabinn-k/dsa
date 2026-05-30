@@ -9,12 +9,32 @@ type Node struct {
 }
 
 func Binary() {
-	root := Node{data: 10}
-	root.left = &Node{data: 20}
-	root.right = &Node{data: 30}
+	root := &Node{
+		data: 10,
+		left: &Node{
+			data: 20,
+			left: &Node{
+				data: 40,
+			},
+		},
+		right: &Node{data: 30},
+	}
 
+	count := CountNode(root)
+	fmt.Println(count)
+	PrintTree(root,0)
+}
+
+func PrintTree(root *Node, space int) {
+	if root == nil {
+		return
+	}
+	space += 5
+	PrintTree(root.right, space)
+	fmt.Println()
+	for i := 0; i < space; i++ {
+		fmt.Print(" ")
+	}
 	fmt.Println(root.data)
-	fmt.Println(root.left.data)
-	fmt.Println(root.right.data)
-	fmt.Println("hyy")
+	PrintTree(root.left, space)
 }
