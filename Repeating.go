@@ -14,8 +14,10 @@ func Repeat(str string) {
 	}
 	for _, v := range str {
 		n[v]++
-		if n[v] == 1 {
-			fmt.Println("First non-repeating character :", string(v))
+	}
+	for _,v:=range str{
+		if n[v]==1{
+			fmt.Println("first non-repeating :",string(v))
 			break
 		}
 	}
