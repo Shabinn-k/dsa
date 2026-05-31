@@ -72,4 +72,9 @@ func main() {
 	//Binary  tree
 	Binary()
 
+	// Merge sort
+	arr9:=[]int{8, 3, 5, 4, 7, 6, 1, 2}
+	MS:=MergeSort(arr9)
+	fmt.Println(MS)
+
 }
