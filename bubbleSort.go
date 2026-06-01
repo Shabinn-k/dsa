@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func Bubble(arr []int) []int {
 	n := len(arr)
 	for i := 0; i < n; i++ {
@@ -26,5 +24,25 @@ func BubbleDesc(arr []int) []int {
 	return arr
 	
 
-	
+
+}
+
+func Symmetric(root *Node)bool{
+	if root==nil{
+		return true
+	}
+	return Mirror(root.left,root.right)
+}
+
+func Mirror(left,right *Node)bool{
+	if left==nil&&right==nil{
+		return true
+	}
+	if left==nil||right==nil{
+		return false
+	}
+	if left.data!=right.data{
+		return false
+	}
+	return Mirror(left.left,right.right)&&Mirror(left.right,right.left)
 }

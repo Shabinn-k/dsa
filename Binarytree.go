@@ -14,15 +14,19 @@ func Binary() {
 		left: &Node{
 			data: 20,
 			left: &Node{
-				data: 40,
+				data: 30,
 			},
 		},
-		right: &Node{data: 30},
+		right: &Node{
+			data: 20,
+		
+		right: &Node{data: 30},},
 	}
 
 	count := CountNode(root)
 	fmt.Println(count)
 	PrintTree(root,0)
+	fmt.Println(Symmetric(root))
 }
 
 func PrintTree(root *Node, space int) {
