@@ -131,7 +131,7 @@ package main
 //     Print(root.left,space)
 // }
 
-// func Count( root *Node)int{
+// func Count(root *Node)int{
 //     if root==nil{
 //         return 0
 //     }

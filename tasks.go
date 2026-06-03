@@ -6,6 +6,7 @@ type Nodes struct{
     left *Node
     right *Node
 }
+
 // binary tree
 func binary(){
     root:=&Node{data:100,
@@ -43,6 +44,7 @@ Delete(root,10)
 Print(root,0)
     
 }
+
 // print
 func Prints(root *Node,space int){
     if root==nil{
@@ -57,6 +59,7 @@ func Prints(root *Node,space int){
     fmt.Println(root.data)
     Print(root.left,space)
 }
+
 // insert
 func insert(root *Node,val int)*Node{
     if root==nil{
@@ -69,6 +72,7 @@ func insert(root *Node,val int)*Node{
     }
     return root
 }
+
 // search bst
 func Search(root *Node,val int)bool{
     if root==nil{
@@ -232,6 +236,7 @@ func Findmin(root *Node)*Node{
     }
     return root
 }
+
 func Delete(root *Node,val int)*Node{
     if root==nil{
         return nil
