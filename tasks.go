@@ -195,7 +195,7 @@ func high(root *Node)(int,int){
             max=rmax
         }
         if rmin<min{
-            min=rmin
+            min=rmin    
         }
     }
     if root.left!=nil{

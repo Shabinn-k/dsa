@@ -77,4 +77,6 @@ func main() {
 	MS:=MergeSort(arr9)
 	fmt.Println(MS)
 
+	//heap
+	Heap()
 }
