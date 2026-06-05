@@ -84,4 +84,8 @@ func main() {
 	arr10:=[]int{8, 3, 5, 4, 7, 6, 1, 2}
 	QuickSort(arr10,0,len(arr10)-1)
 	fmt.Println("quick sort :",arr10)
+
+	//Graph
+	Graph()
+	GR()
 }
