@@ -21,12 +21,10 @@ func merge(left,right []int)[]int{
 		}
 	}
 	if i<len(left){
-		res=append(res,left[i])
-		i++
+		res=append(res,left[i:]...)
 	}
 	if j<len(right){
-		res=append(res,right[j])
-		j++
+		res=append(res,right[j:]...)
 	}
 	return res
 }

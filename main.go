@@ -12,11 +12,11 @@ func main() {
 	//bubble sort
 	arr1 := []int{7, 4, 1, 9, 3}
 	BS := Bubble(arr1)
-	fmt.Println(BS)
+	fmt.Println("Bubble sort :",BS)
 
 	arr2 := []int{2, 8, 1, 5, 4}
 	BSD := BubbleDesc(arr2)
-	fmt.Print(BSD)
+	fmt.Print("Bubble descending :",BSD)
 
 	//Palindrome
 	str2 := "malayalam"
@@ -62,12 +62,12 @@ func main() {
 	//Insertion
 	arr7 := []int{5, 3, 4, 1}
 	IS := Insertion(arr7)
-	fmt.Println(IS)
+	fmt.Println("Insertional sort :",IS)
 
 	//Selection
 	arr8:=[]int{64 ,25 ,12 ,22 ,11}
 	SS:=Selection(arr8)
-	fmt.Println(SS)
+	fmt.Println("Selection sort :",SS)
 
 	//Binary  tree
 	Binary()
@@ -75,8 +75,13 @@ func main() {
 	// Merge sort
 	arr9:=[]int{8, 3, 5, 4, 7, 6, 1, 2}
 	MS:=MergeSort(arr9)
-	fmt.Println(MS)
+	fmt.Println("Merge sort :",MS)
 
 	//heap
-	Heap()
+	// Heap()
+
+	//quick Sort
+	arr10:=[]int{8, 3, 5, 4, 7, 6, 1, 2}
+	QuickSort(arr10,0,len(arr10)-1)
+	fmt.Println("quick sort :",arr10)
 }
