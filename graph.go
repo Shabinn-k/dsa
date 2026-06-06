@@ -29,6 +29,9 @@ func GR(){
 	DFS(0,gr,visited)
 	fmt.Println()
 	BFS(0,gr)
+	fmt.Println()
+	v:=make(map[int]bool)
+	fmt.Println(PathExist(0,60,gr,v))
 }
 func BFS(start int,graph map[int][]int){
 	visited:=make(map[int]bool)
@@ -57,3 +60,18 @@ func DFS(node int,graph map[int][]int,visited map[int]bool){
 		}
 }
 
+
+func PathExist(start,end int,gr map[int][]int,vis map[int]bool)bool{
+	if start==end{
+		return true
+	}
+	vis[start]=true
+	for _,n:=range gr[start]{
+		if !vis[n]{
+			if PathExist(n,end,gr,vis){
+				return true
+			}
+		}
+	}
+	return false
+}
