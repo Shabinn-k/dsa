@@ -7,7 +7,7 @@ func QuickSort(arr []int,low,high int){
 		QuickSort(arr,low,pi-1)
 		QuickSort(arr,pi+1,high)
 	}
-}
+	}
 
 func Partition(arr []int,low,high int)int{
 	Pivot:=arr[high]
